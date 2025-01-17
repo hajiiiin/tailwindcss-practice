@@ -85,6 +85,40 @@ function main() {
           </p>
         </div>
       </div>
+
+      <div className="p-6 space-y-6 mb-3">
+        <div className="peer relative border rounded-lg p-4">
+          <input type="checkbox" id="child-checkbox" className="peer hidden" />
+
+          <label
+            htmlFor="child-checkbox"
+            className="block p-4 bg-gray-100 rounded-lg cursor-pointer peer-checked:bg-blue-100"
+          >
+            자식 상태에 따라 배경 변경
+          </label>
+
+          <p className="absolute top-full mt-2 text-gray-500 peer-checked:text-blue-500">
+            체크박스가 선택되었습니다!
+          </p>
+        </div>
+      </div>
+
+      <div className="space-y-6">
+        <div className="peer border p-4 rounded-lg peer-focus-within:border-blue-500">
+          <label
+            htmlFor="text-input"
+            className="block text-sm font-medium text-gray-700"
+          >
+            텍스트를 입력하세요
+          </label>
+          <input
+            id="text-input"
+            type="text"
+            className="w-full p-2 mt-2 border rounded-lg focus:outline-none"
+            placeholder="여기에 입력"
+          />
+        </div>
+      </div>
     </div>
   );
 }
