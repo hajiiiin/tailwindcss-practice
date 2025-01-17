@@ -104,7 +104,7 @@ function main() {
       </div>
 
       <div className="space-y-6">
-        <div className="peer border p-4 rounded-lg peer-focus-within:border-blue-500">
+        <div className="peer-focus-within:border-blue-500 border p-4 rounded-lg">
           <label
             htmlFor="text-input"
             className="block text-sm font-medium text-gray-700"
@@ -114,7 +114,7 @@ function main() {
           <input
             id="text-input"
             type="text"
-            className="w-full p-2 mt-2 border rounded-lg focus:outline-none"
+            className="peer w-full p-2 mt-2 border rounded-lg focus:outline-none"
             placeholder="여기에 입력"
           />
         </div>
