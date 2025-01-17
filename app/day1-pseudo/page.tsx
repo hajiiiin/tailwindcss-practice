@@ -1,6 +1,6 @@
 "use client";
 
-function main() {
+function day1() {
   return (
     <div>
       <ul className="space-y-4 py-4">
@@ -123,4 +123,4 @@ function main() {
   );
 }
 
-export default main;
+export default day1;
