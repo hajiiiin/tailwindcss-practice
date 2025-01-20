@@ -38,8 +38,14 @@ function main() {
       </div>
       <div className="px-4 md:border-x md:border-x-gray-100 md:px-9">
         <main className="flex flex-col items-center gap-8 max-w-[1280px] mx-auto">
-          {data.map((item) => (
-            <Card {...item} />
+          {data.map((item, index) => (
+            <Card key={index}>
+              <Card.Image />
+              <Card.Content>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Description>{item.body}</Card.Description>
+              </Card.Content>
+            </Card>
           ))}
         </main>
       </div>

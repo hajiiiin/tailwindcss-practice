@@ -13,7 +13,7 @@ const Card = ({ children }: { children: React.ReactNode }) => {
 };
 
 // Card.Image 컴포넌트
-const Image = ({ src }: { src: string }) => {
+const Image = () => {
   return (
     <div className="border-2 rounded-lg p-5 w-40 h-40 m-3 flex-shrink-0">
       image
