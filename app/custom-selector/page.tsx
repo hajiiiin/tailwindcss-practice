@@ -16,32 +16,22 @@ function CustomSelector() {
 
   const triggerRadius = isOpen ? "rounded-t-md rounded-b-none" : "rounded-md";
   const listItemHeight = "min-h-12";
+
   return (
     <div>
       <div className="flex w-full flex-wrap md:flex-nowrap gap-4 p-4">
+        <Select className="max-w-xs" label="Select an animal">
+          {every.map((every) => (
+            <SelectItem key={every.key}>{every.label}</SelectItem>
+          ))}
+        </Select>
         <Select
-          classNames={{
-            trigger: [
-              "border-2",
-              listItemHeight,
-              triggerRadius,
-              "data-[open=true]:border-codeit_purple",
-              "data-[focus=true]:border-codeit_purple",
-              "data-[hover=true]:border-codeit_purple",
-            ],
-          }}
-          label="모든 타입"
-          onOpenChange={(open) => setIsOpen(open)}
+          className="max-w-xs"
+          label="Favorite Animal"
+          placeholder="Select an animal"
         >
           {every.map((every) => (
-            <SelectItem
-              classNames={{
-                trigger: [listItemHeight, triggerRadius],
-              }}
-              key={every.key}
-            >
-              {every.label}
-            </SelectItem>
+            <SelectItem key={every.key}>{every.label}</SelectItem>
           ))}
         </Select>
       </div>

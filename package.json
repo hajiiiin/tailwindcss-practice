@@ -12,10 +12,13 @@
     "@heroui/select": "^2.4.9",
     "@heroui/system": "^2.4.6",
     "@heroui/theme": "^2.4.5",
-    "framer-motion": "^11.18.0",
+    "@react-spring/web": "^9.7.5",
+    "@uidotdev/usehooks": "^2.4.1",
+    "framer-motion": "^11.18.1",
     "next": "15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-use-measure": "^2.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",
