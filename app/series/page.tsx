@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Card, { CardProps } from "../components/Card";
+import Nav from "../components/Nav";
+import Header from "../components/Header";
 
-function main() {
+function Series() {
   const [data, setData] = useState<CardProps[]>([]);
 
   useEffect(() => {
@@ -15,25 +17,25 @@ function main() {
   return (
     <div>
       <div className="sticky top-0 z-10">
-        <header className="flex flex-row gap-x-4 p-4 justify-center bg-white border-b">
-          <div className="font-semibold text-3xl">NEWNEEK</div>
-          <div>홈</div>
-          <div>시리즈</div>
-          <div>그라운드</div>
-          <div>아엠뉴</div>
-          <div>광고제휴</div>
-        </header>
+        <Header>
+          <Header.Logo>NEWNEEK</Header.Logo>
+          <Header.NavItem>홈</Header.NavItem>
+          <Header.NavItem>시리즈</Header.NavItem>
+          <Header.NavItem>그라운드</Header.NavItem>
+          <Header.NavItem>아엠뉴</Header.NavItem>
+          <Header.NavItem>광고제휴</Header.NavItem>
+        </Header>
 
         <div className="mx-auto z-10 bg-white border-b pt-3 mb-5 mx-4 w-full">
-          <nav className="flex flex-row gap-x-4 px-4 pb-2">
-            <div>전체</div>
-            <div>뉴닉</div>
-            <div>추천</div>
-            <div>팔로잉</div>
-            <div>경제</div>
-            <div>정치/사회</div>
-            <div>문화/트렌드</div>
-          </nav>
+          <Nav>
+            <Nav.Item active>전체</Nav.Item>
+            <Nav.Item>뉴닉</Nav.Item>
+            <Nav.Item>추천</Nav.Item>
+            <Nav.Item>팔로잉</Nav.Item>
+            <Nav.Item>경제</Nav.Item>
+            <Nav.Item>정치/사회</Nav.Item>
+            <Nav.Item>문화/트렌드</Nav.Item>
+          </Nav>
         </div>
       </div>
       <div className="px-4 md:border-x md:border-x-gray-100 md:px-9">
@@ -53,4 +55,4 @@ function main() {
   );
 }
 
-export default main;
+export default Series;
