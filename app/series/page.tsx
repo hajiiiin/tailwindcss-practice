@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Card, { CardProps } from "./components/Card";
+import Card, { CardProps } from "../components/Card";
 
 function main() {
   const [data, setData] = useState<CardProps[]>([]);
